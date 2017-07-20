@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+<!-- CREATING A MODULE AND ADDING A CONTROLLER
+
+<div data-ng-app="myApp" data-ng-controller="myCtrl" style="font-size: 100px">
+{{firstName + " " + lastName}}
+</div>
+
+<script>
+
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope) {
+    $scope.firstName = "Martin";
+    $scope.lastName = "Ferrari";
+});
+
+</script> -->
+
+<!-- ADDING A DIRECTIVE
+
+<div data-ng-app="myApp" w3-test-directive style="font-size: 100px"></div>
+
+<script>
+var app = angular.module("myApp", []);
+app.directive("w3TestDirective", function() {
+    return {
+        template: "I was made in a directive constructor!!"
+    };
+});
+
+</script> -->
+
+MODULES AND CONTROLLERS IN FILES
+
+<div data-ng-app="myApp" data-ng-controller="myCtrl">
+{{ firstName + " " + lastName }}
+</div>
+
+<script src="myApp.js"></script>
+<script src="myCtrl.js"></script>
+
+</body>
+</html>
